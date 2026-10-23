@@ -3,7 +3,7 @@
 <head>
   <base target="_top">
   <meta charset="utf-8">
-  <title>组员登录查重小程序</title>
+  <title>登录查重小程序</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
   <style>
@@ -22,7 +22,7 @@
 <body>
   <section id="loginView" class="shell">
     <form id="loginCard" class="card login" onsubmit="event.preventDefault();doLogin()">
-      <div class="brand">组员登录查重系统</div>
+      <div class="brand">登录查重系统</div>
       <div class="muted">请使用管理员创建的账号登录</div>
       <label class="field">登录账号</label><input id="loginUser" class="control" autocomplete="username">
       <label class="field">密码</label><input id="loginPass" class="control" type="password" autocomplete="current-password">
@@ -40,7 +40,7 @@
   </section>
 
   <section id="appView" class="hidden">
-    <header class="top"><div class="topin"><div class="title">组员登录查重系统</div><span id="who" class="pill"></span><button class="btn" onclick="doLogout()">退出</button></div></header>
+    <header class="top"><div class="topin"><div class="title">登录查重系统</div><span id="who" class="pill"></span><button class="btn" onclick="doLogout()">退出</button></div></header>
     <main class="shell">
       <div class="tabs"><button class="btn tab active" data-page="query" onclick="showPage('query',this)">号码查重</button><button class="btn tab" data-page="password" onclick="showPage('password',this)">修改密码</button><button id="adminTab" class="btn tab hidden" data-page="admin" onclick="showPage('admin',this);loadAdmin()">管理员后台</button></div>
       <section id="page-query" class="page">
